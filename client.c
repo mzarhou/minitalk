@@ -21,7 +21,7 @@ void	sendChar(char c, int serverPid)
 	{
 		bit = 1 & (c >> shiftBy);
 		sendBit(bit, serverPid);
-		usleep(500);
+		usleep(200);
 		shiftBy--;
 	}
 }
