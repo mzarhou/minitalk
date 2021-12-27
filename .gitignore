@@ -1,5 +1,3 @@
-client
-server
-client_bonus
-server_bonus
+build/
+obj/
 *.o
