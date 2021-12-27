@@ -6,7 +6,7 @@
 /*   By: mzarhou <mzarhou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/27 22:27:20 by mzarhou           #+#    #+#             */
-/*   Updated: 2021/12/27 22:59:45 by mzarhou          ###   ########.fr       */
+/*   Updated: 2021/12/28 00:01:04 by mzarhou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,6 @@ int	main(int argc, char **argv)
 	server_pid = ft_atoi(argv[1]);
 	string_to_send = argv[2];
 	signal(SIGUSR1, ft_handler);
-	signal(SIGUSR2, ft_handler);
 	while (*string_to_send)
 	{
 		ft_send_char(*string_to_send, server_pid);
